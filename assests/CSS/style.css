@@ -2,13 +2,17 @@
 
 html, body {
     box-sizing: border-box;
-    background-size: cover;
+    height: 100%;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/greek-vase.png');
+  
     }
     
 
 
 .wrapper {box-sizing: content-box;
-    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/greek-vase.png');}
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/greek-vase.png');
+    
+}
 
 
 h1 {color: #4aaaa5;
@@ -38,7 +42,7 @@ nav::after{
 }
 
 .NavBar {
-    width: 100%;
+    width: 960px;
 
     padding-left: 20px;
 }
@@ -82,10 +86,14 @@ img {
     padding: 20px;
 
 }
-.footer {
+#sticky-footer {
     background-color: #777777;
     border-top: 8px solid #4aaaa5;
     height: 30px;
     width: 100%;
+    flex-shrink: none;
+    position: fixed;
+    bottom: 0;
+
     
 }
